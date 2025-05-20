@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports:
+      - "9595:9595"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - /volume1/docker/puppeteer-fastapi-bot/pyppeteer-cache:/root/.pyppeteer
